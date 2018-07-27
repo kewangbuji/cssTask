@@ -1,0 +1,569 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+    <meta charset="UTF-8">
+    <title>task5test</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        .headers {
+            background: #68cdd5;
+            width: 100%;
+            height: 88px;
+            color: white;
+            text-align: center;
+            line-height: 88px;
+            position: fixed;
+            z-index: 1;
+            border: solid #68cdd5;
+        }
+
+        .person {
+            font-size: 32px;
+        }
+
+        .arrows {
+            display: inline-block;
+            margin: 10px;
+            border-right: 6px solid;
+            border-bottom: 6px solid;
+            width: 20px;
+            height: 20px;
+            transform: rotate(135deg);
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+
+        .ups {
+            width: 100%;
+            height: 328px;
+            background-image: url("img/han.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: #efefef;
+            position: absolute;
+            left: 35px;
+            top: 165px;
+        }
+
+        .woman {
+            display: inline-block;
+            position: absolute;
+            right: 16px;
+        }
+
+        .sites {
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            text-align: right;
+            color: white;
+            font-size: 16px;
+        }
+
+        .word {
+            font-size: 18px;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+        }
+
+        .one {
+            width: 100%;
+            height: 100px;
+            font-size: 29px;
+            line-height: 100px;
+            border-bottom: 1px solid #696969;
+        }
+
+        .oneLeft {
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            border-right: 3px solid #68cdd5;
+        }
+
+        .oneWord {
+            display: inline-block;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        .two {
+            width: 95%;
+            height: 100px;
+            line-height: 100px;
+            margin-left: 20px;
+            font-size: 29px;
+            border-bottom: 1px solid #696969;
+        }
+
+        .twoStar {
+            width: 24px;
+            height: 23px;
+            margin-left: 20px;
+            padding-right: 30px;
+            border-right: solid #696969;
+        }
+
+        .twoStars {
+            width: 24px;
+            height: 23px;
+            margin-left: 20px;
+            padding-left: 23px;
+        }
+
+        .threeWord {
+            color: #9C9C9C;
+        }
+
+        .fourWord {
+            color: #e46a6c;
+        }
+
+        .six {
+             position: absolute;
+             width: 95%;
+             margin-left: 20px;
+             min-height: 100px;
+             border-bottom: 1px solid #696969;
+         }
+
+        .aside {
+            position: absolute;
+            /*display: inline-block;*/
+            font-size: 29px;
+            margin-left: 20px;
+            padding-right: 35px;
+            /*height: 38px;*/
+            top: 35%;
+            border-right: solid #696969;
+            color: #9C9C9C;
+        }
+
+        .content {
+            display: inline-block;
+            margin-left: 220px;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            font-size: 20px;
+            /*vertical-align: middle;*/
+        }
+
+        /*.clear {*/
+        /*clear: both;*/
+        /*}*/
+
+        .footers {
+            line-height: 88px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .spanwhite {
+            width: 38%;
+            height: 88px;
+            border: solid #68cdd5;
+            border-radius: 15px;
+            background: white;
+            color: #68cdd5;
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+        }
+
+        .spanblue {
+            width: 38%;
+            height: 88px;
+            border: solid #68cdd5;
+            border-radius: 15px;
+            background: #68cdd5;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="headers">
+    <p class="person">个人主页</p>
+    <div class="arrows"></div>
+</header>
+<main>
+    <div class="ups">
+        <div class="circle">
+            <div class="woman">
+                <img src="img/woman.png" style="width: 68px;
+                         height: 92px;">
+            </div>
+        </div>
+        <div class="sites">
+            <p class="word">徐士林 55岁</p>
+            <img src="img/site.png">
+            京城·四方·报纸林
+        </div>
+    </div>
+</main>
+<main class="one">
+    <span class="oneLeft"></span>
+    <span class="oneWord">专业技能</span>
+</main>
+<main class="two">
+    <span class="twoStar">
+        <img src="img/fivestar.png">    住家
+    </span>
+    <span class="twoStars">
+        <img src="img/fivestar.png">    不含餐
+    </span>
+</main>
+<main class="two">
+    <span class="twoStar threeWord">
+          从业年限
+    </span>
+    <span class="twoStars">
+           0~3年
+    </span>
+</main>
+<main class="two">
+    <span class="twoStar threeWord">
+          工作时间
+    </span>
+    <span class="twoStars">
+           全天
+    </span>
+</main>
+<main class="two">
+    <span class="twoStar threeWord">
+          服务价格
+    </span>
+    <span class="twoStars fourWord">
+           25元/小时
+    </span>
+</main>
+
+<main class="six">
+    <span class="aside">
+        自我介绍
+    </span>
+    <span class="content">
+        可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。
+        可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。
+        <!--可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。-->
+        <!--可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。-->
+        <!--可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。-->
+    </span>
+</main>
+
+
+<div style="height: 350px"></div>
+
+<footer class="footers">
+    <p class="spanwhite">留言</p>
+    <p class="spanblue">电话联系</p>
+</footer>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+    <meta charset="UTF-8">
+    <title>task5test</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        .headers {
+            background: #68cdd5;
+            width: 100%;
+            height: 88px;
+            color: white;
+            text-align: center;
+            line-height: 88px;
+            position: fixed;
+            z-index: 1;
+            border: solid #68cdd5;
+        }
+
+        .person {
+            font-size: 32px;
+        }
+
+        .arrows {
+            display: inline-block;
+            margin: 10px;
+            border-right: 6px solid;
+            border-bottom: 6px solid;
+            width: 20px;
+            height: 20px;
+            transform: rotate(135deg);
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+
+        .ups {
+            width: 100%;
+            height: 328px;
+            background-image: url("img/han.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: #efefef;
+            position: absolute;
+            left: 35px;
+            top: 165px;
+        }
+
+        .woman {
+            display: inline-block;
+            position: absolute;
+            right: 16px;
+        }
+
+        .sites {
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            text-align: right;
+            color: white;
+            font-size: 16px;
+        }
+
+        .word {
+            font-size: 18px;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+        }
+
+        .one {
+            width: 100%;
+            height: 100px;
+            font-size: 29px;
+            line-height: 100px;
+            border-bottom: 1px solid #696969;
+        }
+
+        .oneLeft {
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            border-right: 3px solid #68cdd5;
+        }
+
+        .oneWord {
+            display: inline-block;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        .two {
+            width: 95%;
+            height: 100px;
+            line-height: 100px;
+            margin-left: 20px;
+            font-size: 29px;
+            border-bottom: 1px solid #696969;
+        }
+
+        .twoStar {
+            width: 24px;
+            height: 23px;
+            margin-left: 20px;
+            padding-right: 30px;
+            border-right: solid #696969;
+        }
+
+        .twoStars {
+            width: 24px;
+            height: 23px;
+            margin-left: 20px;
+            padding-left: 23px;
+        }
+
+        .threeWord {
+            color: #9C9C9C;
+        }
+
+        .fourWord {
+            color: #e46a6c;
+        }
+
+        .six {
+             position: absolute;
+             width: 95%;
+             margin-left: 20px;
+             min-height: 100px;
+             border-bottom: 1px solid #696969;
+         }
+
+        .aside {
+            position: absolute;
+            /*display: inline-block;*/
+            font-size: 29px;
+            margin-left: 20px;
+            padding-right: 35px;
+            /*height: 38px;*/
+            top: 35%;
+            border-right: solid #696969;
+            color: #9C9C9C;
+        }
+
+        .content {
+            display: inline-block;
+            margin-left: 220px;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            font-size: 20px;
+            /*vertical-align: middle;*/
+        }
+
+        /*.clear {*/
+        /*clear: both;*/
+        /*}*/
+
+        .footers {
+            line-height: 88px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .spanwhite {
+            width: 38%;
+            height: 88px;
+            border: solid #68cdd5;
+            border-radius: 15px;
+            background: white;
+            color: #68cdd5;
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+        }
+
+        .spanblue {
+            width: 38%;
+            height: 88px;
+            border: solid #68cdd5;
+            border-radius: 15px;
+            background: #68cdd5;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="headers">
+    <p class="person">个人主页</p>
+    <div class="arrows"></div>
+</header>
+<main>
+    <div class="ups">
+        <div class="circle">
+            <div class="woman">
+                <img src="img/woman.png" style="width: 68px;
+                         height: 92px;">
+            </div>
+        </div>
+        <div class="sites">
+            <p class="word">徐士林 55岁</p>
+            <img src="img/site.png">
+            京城·四方·报纸林
+        </div>
+    </div>
+</main>
+<main class="one">
+    <span class="oneLeft"></span>
+    <span class="oneWord">专业技能</span>
+</main>
+<main class="two">
+    <span class="twoStar">
+        <img src="img/fivestar.png">    住家
+    </span>
+    <span class="twoStars">
+        <img src="img/fivestar.png">    不含餐
+    </span>
+</main>
+<main class="two">
+    <span class="twoStar threeWord">
+          从业年限
+    </span>
+    <span class="twoStars">
+           0~3年
+    </span>
+</main>
+<main class="two">
+    <span class="twoStar threeWord">
+          工作时间
+    </span>
+    <span class="twoStars">
+           全天
+    </span>
+</main>
+<main class="two">
+    <span class="twoStar threeWord">
+          服务价格
+    </span>
+    <span class="twoStars fourWord">
+           25元/小时
+    </span>
+</main>
+
+<main class="six">
+    <span class="aside">
+        自我介绍
+    </span>
+    <span class="content">
+        可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。
+        可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。
+        <!--可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。-->
+        <!--可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。-->
+        <!--可以洗衣，做饭，照顾老人。在护工方面有5年的经验，经验丰富。-->
+    </span>
+</main>
+
+
+<div style="height: 350px"></div>
+
+<footer class="footers">
+    <p class="spanwhite">留言</p>
+    <p class="spanblue">电话联系</p>
+</footer>
+</body>
+</html>
+>>>>>>> hhhhhh
