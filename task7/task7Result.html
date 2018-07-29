@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/jquery/2.0.0/jquery.min.js"></script>
+<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+    <script>
+        window.onload = function () {
+            var audio = document.getElementById('music');
+            audio.pause();//打开页面时无音乐
+        }
+
+        function play() {
+            var audio = document.getElementById('music');
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('musicImg').src = "media/three.png";
+            } else {
+                audio.pause();
+                audio.currentTime = 0;//音乐从头播放
+                document.getElementById('musicImg').src = "media/three.png";
+            }
+        }
+    </script>
+    <link href="task7Result.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>task7Result</title>
+</head>
+<body>
+<header class="header">
+    <div class="headers">
+        游戏结果
+    </div>
+    <div class="headersImg">
+        <img src="media/resultClose.png" width="25px" height="25px">
+    </div>
+    <div class="headersImage">
+        <img src="media/resultHouse.png" width="25px" height="25px">
+    </div>
+</header>
+<main>
+    <div class="upBox">
+        <div class="mai">
+            <img src="media/wine.png">
+        </div>
+        <div class="wordOne">
+            <p align="left">太棒了！你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！</p>
+        </div>
+        <div class="wordTwo">
+            <p align="left">本次游戏共计用时0小时25分钟</p>
+            <span>杀&emsp;手0人</span>&emsp;&emsp;<span>警&emsp;察1人</span>&emsp;&emsp;<span>平&emsp;民6人</span>
+            <p><span>狙击手0人</span>&emsp;&emsp;<span>医&emsp;生1人</span></p>
+            <p align="left">卧底词汇：爱新觉罗</p>
+            <p align="left">水民词汇：努尔哈赤</p>
+        </div>
+    </div>
+</main>
+<main>
+    <div>
+        <div class="oneDay">
+            <span class="oneDayLeft">第1天</span>
+            <span class="oneDayRight">0小时07分</span>
+            <p class="oneDayTwo">晚上：5号被杀手杀死，5号是水民</p>
+            <p class="oneDayTwo">白天：8号被全民投票投死，8号是杀手</p>
+        </div>
+        <div class="oneDay">
+            <span class="oneDayLeft">第2天</span>
+            <span class="oneDayRight">0小时07分</span>
+            <p class="oneDayTwo">晚上：5号被杀手杀死，5号是水民</p>
+            <p class="oneDayTwo">白天：8号被全民投票投死，8号是杀手</p>
+        </div>
+        <div class="oneDay">
+            <span class="oneDayLeft">第3天</span>
+            <span class="oneDayRight">0小时10分</span>
+            <p class="oneDayTwo">晚上：5号被杀手杀死，5号是水民</p>
+            <p class="oneDayTwo">白天：8号被全民投票投死，8号是杀手</p>
+        </div>
+    </div>
+    <div style="height: 150px"></div>
+</main>
+<footer class="footSeven">
+    <span class="footLeft">再来一局</span>
+    <span class="footRight">上传并分享</span>
+</footer>
+</body>
+</html>

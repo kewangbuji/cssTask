@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/jquery/2.0.0/jquery.min.js"></script>
+<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+    <script>
+        window.onload = function () {
+            var audio = document.getElementById('music');
+            audio.pause();//打开页面时无音乐
+        }
+
+        function play() {
+            var audio = document.getElementById('music');
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('musicImg').src = "media/three.png";
+            } else {
+                audio.pause();
+                audio.currentTime = 0;//音乐从头播放
+                document.getElementById('musicImg').src = "media/three.png";
+            }
+        }
+    </script>
+    <link href="task7Homepage.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>task7Homepage</title>
+</head>
+<body>
+<header class="header">
+    <div class="headersImage">
+        <img src="media/threeBar.png">
+    </div>
+</header>
+<main>
+    <div class="yellow">
+        <img src="media/yellowTriangle.png">
+    </div>
+</main>
+<main>
+    <div class="frame">
+        <span >
+            上次游戏：捉鬼猜词版
+        </span>
+        <span class="arrowSeven">
+        </span>
+    </div>
+</main>
+<main>
+    <div class="frameTwo">
+        <div class="yellowWord">
+            捉鬼游戏
+        </div>
+        <div class="simplify">
+            简化版
+        </div>
+        <p class="wordTwo">有1133个用户正在玩此款游戏</p>
+        <div class="simplify">
+            猜词版
+        </div>
+        <p class="wordTwo">有1133个用户正在玩此款游戏</p>
+        <div class="simplify">
+            白痴版
+        </div>
+        <p class="wordTwo">有1133个用户正在玩此款游戏</p>
+        <div class="four">
+            <span class="fourBlue"></span>&ensp;
+            <span class="fourGray"></span>&ensp;
+            <span class="fourGray"></span>&ensp;
+            <span class="fourGray"></span>&ensp;
+        </div>
+    </div>
+    <div style="height: 80px"></div>
+</main>
+<!--<footer class="footSeven">-->
+    <!--<span class="footLeft">再来一局</span>-->
+    <!--<span class="footRight">上传并分享</span>-->
+<!--</footer>-->
+</body>
+</html>

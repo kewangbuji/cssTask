@@ -1,0 +1,133 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: #2aabd2;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px #74d4eb solid;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.headers {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+
+}
+
+.headersImage {
+    position: absolute;
+    bottom: -5px;
+    left: 30px;
+}
+
+.headersImg {
+    position: absolute;
+    bottom: -5px;
+    right: 30px;
+}
+
+.upBox {
+    margin-top: 60px;
+    width: 100%;
+    /*height: 620px;*/
+    background: #2aabd2;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mai {
+    padding-top: 20px;
+}
+
+.wordOne {
+    color: #ffc865;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.wordTwo {
+    color: white;
+    font-size: 23px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-bottom: 5px;
+    line-height: 25px;
+}
+
+.oneDay {
+    padding-top: 5px;
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 75px;
+    /*line-height: 25px;*/
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid #a6a6a6;
+}
+
+.oneDayLeft {
+   color:  #515151;
+    font-size: 25px;
+}
+
+.oneDayRight {
+    color: #d5d5d5;
+    font-size: 16px;
+    position: absolute;
+    right: 85px;
+}
+
+.oneDayTwo {
+   color:  #a6a6a6;
+    font-size: 23px;
+    line-height: 16px;
+}
+
+.footSeven {
+    width: 100%;
+    height: 100px;
+    /*opacity: 0.5;*/
+    background-color: rgba(41,189,224,0.5);
+    /*background-color: #2aabd2;*/
+    padding-top: 15px ;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+.footLeft{
+    background-color: #f66f6f;
+    width: 272px;
+    height: 45px;
+    border-radius: 22px;
+    color: white;
+    font-size: 30px;
+    padding: 20px 0;
+    position: absolute;
+    left: 25px;
+    text-align: center;
+}
+.footRight{
+    width: 272px;
+    height: 45px;
+    border-radius: 22px;
+    background-color:#fbb435;
+    color: white;
+    font-size: 30px;
+    padding: 20px 0;
+    position: absolute;
+    right: 25px;
+    text-align: center;
+
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/jquery/2.0.0/jquery.min.js"></script>
+<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+    <script>
+        window.onload = function () {
+            var audio = document.getElementById('music');
+            audio.pause();//打开页面时无音乐
+        }
+
+        function play() {
+            var audio = document.getElementById('music');
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('musicImg').src = "media/three.png";
+            } else {
+                audio.pause();
+                audio.currentTime = 0;//音乐从头播放
+                document.getElementById('musicImg').src = "media/three.png";
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>task7Test</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            background: #29bde0;
+        }
+
+        .header {
+            background-color: #29bde0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+        }
+
+        .headers {
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+
+        .headersImage {
+            position: absolute;
+            bottom: -5px;
+            left: 30px;
+        }
+
+        .headersImg {
+            position: absolute;
+            bottom: -5px;
+            right: 30px;
+        }
+
+        .circle {
+            height: 52px;
+            width: 52px;
+            border-radius: 50%;
+            background: #fbb435;
+            position: absolute;
+            right: 100px;
+            top: 9px;
+        }
+
+        .message-box {
+            position: relative;
+            top: 60px;
+            width: 100%;
+            height: 70px;
+            line-height: 70px;
+            background: #b9e9f5;
+            padding-left: 50px;
+            font-size: 20px;
+            color: #5e5e5e;
+        }
+
+        .triangle-border {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            bottom: -20px;
+            border-color: #b9e9f5 transparent transparent transparent;
+        }
+
+        .wordOne {
+            color: white;
+            font-size: 18px;
+            margin-top: 75px;
+            margin-left: 50px;
+        }
+
+        .main {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .blocksZong {
+            width: 25%;
+            margin: 4%;
+            text-align: center;
+            float: left;
+            overflow: hidden;
+        }
+        .img_wrap {
+            margin-top: 5px;
+            padding: 5px;
+            text-align: center;
+            /*display: none;*/
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .blocksLeft {
+            width: 100%;
+            background-color: #f5c97b;
+            box-sizing: border-box;
+            border: 3px;
+            border-style: solid;
+            border-color: white;
+            position: relative;
+            float: left;
+        }
+
+        .blocksLeftOne {
+            background-color: #f5c97b;
+            width: 100%;
+            height: 19.5vw;
+            position: relative;
+        }
+
+        .blocksLeftTwo {
+            background-color: #83b09a;
+            width: 100%;
+            height: 5vw;
+            position: relative;
+        }
+
+        .blocksOne {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #5e5e5e;
+            font-size: 20px;
+        }
+
+        .blocksTwo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+        }
+
+        .footerSeven {
+            background-color: #29bde0;
+            width: 91%;
+            /*height: 130px;*/
+            border-top: 2px white solid;
+            margin-left:  4%;
+            margin-right: 5%;
+            text-align: center;
+            line-height: 130px;
+            position: fixed;
+            z-index: 1;
+            bottom: 0;
+        }
+
+        .footerS {
+            background-color: #fbb435;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            line-height: 60px;
+            color: white;
+            font-size: 22px;
+        }
+
+
+
+        .blocksLeft:hover ~.img_wrap {
+            opacity: 1;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="headers">
+        投票
+    </div>
+    <div class="headersImg">
+        <img src="media/chahao.png" width="25px" height="25px">
+    </div>
+    <div class="headersImage">
+        <img src="media/mulubiao.png" width="25px" height="25px">
+    </div>
+</header>
+<main>
+    <div class="message-box">
+        <span>发言讨论结束，大家请投票</span>
+        <span class="circle">
+       <audio id="music" src="media/freedom.mp3" loop="loop" autoplay></audio>
+<img id="musicImg" src="media/three.png" onClick="play()" alt="musicImg" style="margin-left: 17px; margin-top: 11px"/>
+    </span>
+        <div class="triangle-border"></div>
+    </div>
+
+    <div class="wordOne">
+        点击得票数最多人的头像
+    </div>
+</main>
+<main class="main">
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+</main>
+<main class="main">
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+</main>
+<main class="main">
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+</main>
+<main class="main">
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+    <div class="blocksZong">
+        <div class="blocksLeft">
+            <div class="blocksLeftOne">
+                <div class="blocksOne">水民
+                </div>
+            </div>
+            <div class="blocksLeftTwo">
+                <div class="blocksTwo">1号
+                </div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="media/four.png" style="margin-top: 5px">
+        </div>
+    </div>
+
+</main>
+
+<div style="width:100%;height: 100px"></div>
+
+<footer class="footerSeven">
+    <div class="footerS">
+        投死
+    </div>
+</footer>
+</body>
+</html>
